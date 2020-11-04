@@ -1,6 +1,8 @@
 # rsync-homedir-excludes
 This project maintains a list of directories and files you probably do not need to back up, which you can pass to the `rsync` command's `--exclude-from` option.
 
+Other backup tools like `restic` (`--exclude-file`) also support the syntax of this list.
+
 ## Usage:
 
     # download to `rsync-homedir-local.txt`
