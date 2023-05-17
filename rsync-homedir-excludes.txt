@@ -46,6 +46,7 @@
 #/.aMule
 #/Scribus
 #/VirtualBox*
+#.local/share/gnome-boxes/images
 #/Nextcloud
 #_build
 #
@@ -57,6 +58,7 @@
 #/Games
 #/games
 #.local/share/Steam
+#.var/app/com.valvesoftware.Steam/.local/share/Steam
 #.steam
 #/Steam
 #.minecraft
@@ -68,6 +70,7 @@
 #
 ## Spotify
 #.config/spotify/Users
+#.var/app/com.spotify.Client/config/spotify/Users
 #
 ## those folders contain only temporary Videos I want to watch
 #/Videos
