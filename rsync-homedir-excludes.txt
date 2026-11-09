@@ -9,63 +9,75 @@
 #    USER=<homedir username here>
 #    rsync -aP --exclude-from=rsync-homedir-excludes.txt /home/$USER/ /media/$USER/linuxbackup/home/$USER/
 
+./Schreibtisch/Neuer Ordner
 
 ###############################################
 # directories, probably not worth a backup    #
 # (uncomment the files you don't need)        #
 ###############################################
-
-.android
-.AndroidStudio*/
-Android/Sdk
-.arduino15
-.arduinoIDE
-.cargo
-.gradle
-.gvm
-.grails/
-.grails_history
-.kde/share/apps/nepomuk
-.local/share/notbit
-.local/share/PolyMC/assets/
-.local/share/PolyMC/cache/
-.local/share/PolyMC/libraries/
-.local/libvirt
-.local/share/libvirt
-.openjfx
-.jdks
-.vagrant
-.vagrant.d
-.wine
-.twister
-/twister
-.keras/models
-Applications/eclipse*
-/Downloads
-*Popcorntime*
-/.aMule
-/Scribus
-/VirtualBox*
-.local/share/gnome-boxes/images
-/Nextcloud
+./Bilder/Japan
+./.android
+./.AndroidStudio*/
+./Android/Sdk
+./.arduino*
+./.arduinoIDE
+./.cargo
+./.gradle
+./.gvm
+./.grails/
+./.grails_history
+./.kde/share/apps/nepomuk
+./.local/share/notbit
+./.local/libvirt
+./.local/share/libvirt
+./.openjfx
+./.jdks
+./.vagrant
+./.vagrant.d
+./.wine
+./.twister
+./twister
+./.keras/models
+./Applications/eclipse*
+./Downloads
+./*Popcorntime*
+./.aMule
+./Scribus
+./VirtualBox*
+./.local/share/gnome-boxes/images
+./Nextcloud
 _build
+./go/pkg/
+./.config/Cursor/User/globalStorage/state.vscdb*
+./.config/Cursor/User/workspaceStorage/
+./.config/Cursor/User/History/
+./.config/Cursor/Cache/
+./.config/Cursor/CachedData/
+./.local/share/pnpm/
 
 # Ruby gems
-.rvm
+./.rvm
 
 # Add Game Folders here:
-/Games
-/games
-.local/share/Steam
-.var/app/com.valvesoftware.Steam/.local/share/Steam
-.steam
-/Steam
+./Games
+./games
+./.local/share/Steam
+./.local/share/PolyMC/assets/
+./.local/share/PolyMC/cache/
+./.xlcore/
+./.local/share/PolyMC/libraries/
+./.var/app/com.valvesoftware.Steam/.local/share/Steam
+./.steam
+./Steam
 .minecraft
 .technic
-.PlayOnLinux
-.local/share/lutris/runners/wine/
-/.config/gdlauncher/
-/.config/gdlauncher_next/
+./.PlayOnLinux
+./.local/share/lutris/runners/wine/
+./.local/share/lutris/runtime
+./.config/gdlauncher/
+./.config/gdlauncher_next/
+./.paradoxlauncher/
+./.local/share/Paradox Interactive/*/shadercache/
 
 # Spotify
 .config/spotify/Users
@@ -75,21 +87,22 @@ _build
 .local/lib/python*
 
 # Python virtual environments
-PycharmProjects/**/venv
+venv
 .conda/
+site-packages/
 
 # Maven local repository
-/.m2
+./.m2
 
 # Unlocked Plasma Vaults
-/Vaults
+./Vaults
 
 # Telegram Desktop Cache
-/.local/share/TelegramDesktop/tdata/user_data/
+./.local/share/TelegramDesktop/tdata/user_data/
 
 # Malware scan definitions
-/.clamtk/db/daily.cld
-/.clamtk/db/main.cvd
+./.clamtk/db/daily.cld
+./.clamtk/db/main.cvd
 
 # Docker
 .docker/machine
@@ -104,17 +117,18 @@ PycharmProjects/**/venv
 .gvfs
 .local/share/gvfs-metadata
 # contains the actual encrypted home directory
-/.Private
+./.Private
 
 # Session-specific:
-/.dbus
+./.dbus
+./.cache/**
 .cache
 .var/app/*/cache
 .var/app/*/.cache
-/.Trash
+./.Trash
 .Trash-1*
 .local/share/Trash
-/Trash
+./Trash
 
 # Cached info about audio CDs:
 .cddb
@@ -157,13 +171,13 @@ Thumbs.db
 .wget-hsts
 
 # Common Unix Printing System
-/.cups
+./.cups
 
 # run-time configuration information for Subversion
-/.subversion
+./.subversion
 
 # Python virtual environments
-/.virtualenvs
+./.virtualenvs
 
 # Session-specific
 .Xauthority
@@ -210,6 +224,7 @@ Thumbs.db
 #Firefox-specific (see also Profile folder):
 
 .mozilla/firefox/*/Cache
+.mozilla/firefox/*/storage/default/*/cache/morgue/
 # in case Fx crashes dumps will be stored in this
 .mozilla/firefox/*/minidumps
 # session-specific 
@@ -266,7 +281,7 @@ Thumbs.db
 .opera/lock
 
 # Keychain dir (manage SSH and GPG keys, front-end to ssh-agent and ssh-add)
-/.keychain
+./.keychain
 
 #Komodo Edit:
 
@@ -324,12 +339,12 @@ Thumbs.db
 .config/chromium/*/Service Worker/CacheStorage
 .config/chromium/*/Application Cache
 .config/chromium/*/History Index *
-/snap/chromium/common/.cache
-/snap/chromium/*/.config/chromium/*/Service Worker/CacheStorage
-/snap/chromium/*/.local/share/
+./snap/chromium/common/.cache
+./snap/chromium/*/.config/chromium/*/Service Worker/CacheStorage
+./snap/chromium/*/.local/share/
 
 #Riot
-/snap/riot-web/
+./snap/riot-web/
 
 #Brave
 .config/BraveSoftware/Brave-Browser/*/Feature Engagement Tracker/
@@ -341,7 +356,7 @@ Thumbs.db
 
 #Local repositories:
 .gradle/caches
-/.m2/repository
+./.m2/repository
 
 #indexer
 .local/share/baloo
@@ -388,7 +403,9 @@ nohup.out
 .config/Code/CachedData/*
 
 # VS Codium
-.config/VSCodium/CachedExtensionVSIXs
+.config/VSCodium/CachedExtensions/
+.config/VSCodium/CachedProfilesData/
+.config/VSCodium/*/ScriptCache/
 
 # VirtualBox
 .config/VirtualBox/VBoxSVC.log*
